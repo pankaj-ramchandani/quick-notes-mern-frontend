@@ -11,6 +11,7 @@
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
     "axios": "^0.26.1",
+    "gh-pages": "^3.2.3",
     "http-proxy-middleware": "^2.0.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -18,11 +19,14 @@
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://pankaj-ramchandani.github.io/quick-notes-mern-frontend",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
